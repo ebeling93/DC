@@ -2,6 +2,7 @@ import json
 from datetime import datetime
 fmt = "%H:%M:%S"
 
+#
 class Table:
   def __init__(self, table):
     self.table_number = table
