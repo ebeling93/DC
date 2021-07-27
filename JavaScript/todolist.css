@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+UL {
+    margin: 0; padding: 0;
+}
+ul li {
+    position: relative;
+    background: rgb(148, 32, 32);
+    font-size: 18px;
+}
