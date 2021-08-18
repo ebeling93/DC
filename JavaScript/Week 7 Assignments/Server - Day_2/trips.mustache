@@ -1,0 +1,33 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Trip App</title>
+</head>
+    <body>
+        <h1>Trips:</h1>
+        <form method="POST" action="/create-trip">
+        <input type="text" placeholder="Destination" name="Destination">
+        <input type="text" placeholder="imageURL" name="imageURL">
+        <input type="text" placeholder="Departure Date" name="Departure">
+        <input type="text" placeholder="Return Date" name="Return">
+
+        <button>Submit</button>
+        
+        
+        </form>
+
+        <ul>
+        {{#allTrips}}
+        <li>
+            {{Destination}} - <img src = "{{imageURL}}" /> - {{Departure}} - {{Return}}
+        </li>
+        {{/allTrips}}
+        </ul>   
+
+    </body>    
+
+
+</html>        
